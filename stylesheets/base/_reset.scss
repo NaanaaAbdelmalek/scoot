@@ -1,0 +1,29 @@
+// All the CSS reset style
+
+@use '../abstracts';
+
+*, *::after, *::before {  
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    display: inline-block;
+    text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}

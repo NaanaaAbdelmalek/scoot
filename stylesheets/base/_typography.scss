@@ -1,0 +1,49 @@
+// All the typography rules
+@use '../abstracts';
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Space+Mono:wght@700&display=swap');
+
+
+$base-font: 'Lexend Deca';
+$heading-font: 'Space Mono';
+$base-font-size: 0.9375rem;
+$base-line-height: 1.5625rem;
+
+body {
+    font-family: $base-font;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    color: abstracts.$dark-navy;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: $heading-font;
+}
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 3.5rem; /* 100% */
+    letter-spacing: -2.5px;
+}
+
+h2 {
+    font-size: 3rem;
+    line-height: 3rem; /* 100% */
+    letter-spacing: -2.143px;
+}
+
+h3 {
+    font-size: 2.5rem;
+    line-height: 3rem; /* 120% */
+    letter-spacing: -1.786px;
+}
+
+h4 {
+    font-size: 1.5rem;
+    line-height: 1.75rem; /* 116.667% */
+    letter-spacing: -1.071px;
+}
