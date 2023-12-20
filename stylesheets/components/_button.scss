@@ -1,0 +1,18 @@
+// Button style and hover
+
+@use '../abstracts';
+
+
+button {
+    width: 192px;
+    height: 53px;
+    background-color: abstracts.$yellow;
+    color: abstracts.$white;
+    border: none;
+
+    &:hover {
+        background-color: abstracts.$white;
+        color: abstracts.$yellow;
+        border: 3px solid abstracts.$yellow
+    }
+}
