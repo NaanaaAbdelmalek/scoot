@@ -5,15 +5,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Space+Mono:wght@700&display=swap');
 
 
-$base-font: 'Lexend Deca';
-$heading-font: 'Space Mono';
-$base-font-size: 0.9375rem;
-$base-line-height: 1.5625rem;
+
 
 body {
-    font-family: $base-font;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
+    font-family: abstracts.$base-font;
+    font-size: abstracts.$base-font-size;
+    line-height: abstracts.$base-line-height;
     color: abstracts.$dark-navy;
 }
 
@@ -21,7 +18,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: $heading-font;
+    font-family: abstracts.$heading-font;
 }
 
 h1 {
@@ -46,4 +43,11 @@ h4 {
     font-size: 1.5rem;
     line-height: 1.75rem; /* 116.667% */
     letter-spacing: -1.071px;
+}
+
+a {
+    font-family: abstracts.$heading-font;
+    font-size: abstracts.$base-font-size;
+    line-height: abstracts.$base-line-height;
+    color: abstracts.$dim-grey;  
 }

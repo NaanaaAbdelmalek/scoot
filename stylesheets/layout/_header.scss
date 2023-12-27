@@ -1,30 +1,79 @@
 // Header style
+@use '../abstracts';
 
 header {
-
     display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 64px;
-    
 
+
+    @include abstracts.adjust-for(abstracts.$tablets) {
+        height: 96px;
+    }
+    
     .hamburger {
         width: 19.692px;
         height: 16px;
         margin-left: 8.53%;
+
+        @include abstracts.adjust-for(abstracts.$tablets) {
+            display: none;
+        }
+
+        @include abstracts.adjust-for(abstracts.$desktop) {
+            display: none;
+        }
     }
 
     .logo {
         width: 75.502px;
         height: 20px;
+        flex: 1;
+        margin-left:  26.21%;
         margin-right: 39.86%;
+
+        @include abstracts.adjust-for(abstracts.$tablets) {
+            width: 107.817px;
+            height: 28.56px;
+            flex: 0 1 auto;
+            margin-right: 0;
+            margin-left: 5.1%;
+        }
+
+        @include abstracts.adjust-for(abstracts.$desktop) {
+            margin-left: 11.7%;
+        }
     }
 
     .header-links {
         display: none;
+
+        @include abstracts.adjust-for(abstracts.$tablets) {
+            display: block;
+            flex: 1;
+            padding-left: 3.64rem;  
+        }
+    }
+
+    ul li {
+        display: inline;
+        margin-right: 32px;
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
 
     button {
         display: none;
+
+        @include abstracts.adjust-for(abstracts.$tablets) {
+            display: inline-block;
+            margin-right: 5.2%;
+        }
+
+        @include abstracts.adjust-for(abstracts.$tablets) {
+            margin-right: 11.45%;
+        }
     }
 }

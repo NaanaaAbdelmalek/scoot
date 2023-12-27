@@ -1,0 +1,9 @@
+// All the mixins
+
+// Responsive design Breakpoints 
+
+@mixin adjust-for($breakpoint) {
+    @media screen and (min-width: $breakpoint) {
+        @content;
+    }
+}
