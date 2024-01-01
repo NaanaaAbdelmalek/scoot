@@ -7,3 +7,11 @@
         @content;
     }
 }
+
+// style for hamburger and close icons
+
+@mixin hamburgercloseMixin(){
+    width: 19.692px;
+    height: 17px;
+    margin-left: 8.53%;
+}

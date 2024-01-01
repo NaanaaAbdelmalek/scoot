@@ -1,0 +1,41 @@
+// Mobile Side Bar styles
+
+@use '../abstracts';
+
+.side-bar {
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -68.27%; 
+    width: 68.27%;
+    height: 100vh;
+    background-color: abstracts.$dark-grayish-blue;
+    padding: 64px 32px 24px 32px;
+    transition: left 0.5s ease-in-out;
+    z-index: 1;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 24px;
+        width: 89px;
+        height: 123px;
+    }
+
+    ul li a {
+        color: abstracts.$light-grey;
+        font-size: 1.125rem;
+    }
+
+    button {
+        margin-top: 339px;
+    }
+
+    @include abstracts.adjust-for (abstracts.$tablets) {
+        display: none;
+    }
+
+}

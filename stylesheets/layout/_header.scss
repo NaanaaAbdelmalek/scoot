@@ -1,4 +1,5 @@
 // Header style
+
 @use '../abstracts';
 
 header {
@@ -10,11 +11,15 @@ header {
     @include abstracts.adjust-for(abstracts.$tablets) {
         height: 96px;
     }
+
+    @include abstracts.adjust-for(abstracts.$desktop) {
+        max-width: 1440px;
+        margin: auto;
+    }
     
     .hamburger {
-        width: 19.692px;
-        height: 16px;
-        margin-left: 8.53%;
+
+        @include abstracts.hamburgercloseMixin;
 
         @include abstracts.adjust-for(abstracts.$tablets) {
             display: none;
@@ -23,6 +28,11 @@ header {
         @include abstracts.adjust-for(abstracts.$desktop) {
             display: none;
         }
+    }
+
+    .closeicon {
+        @include abstracts.hamburgercloseMixin;
+        display: none;
     }
 
     .logo {
