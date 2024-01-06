@@ -1,0 +1,29 @@
+@use '../abstracts';
+
+.hero {
+    height: 650px;
+    background: url('../assets/images/home-hero-mobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: abstracts.$white;
+    text-align: center;
+    
+
+    .hero-content {
+        padding: 115px 32px 0px 32px;
+    }
+
+    h3 {
+        width: 311px;
+        font-size: 40px;
+        line-height: 40px;
+        margin: auto;
+    }
+
+    p {
+        width: 311px;
+        margin: auto;
+        margin-top: 24px;
+        margin-bottom: 48px;
+    }
+}
