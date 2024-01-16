@@ -16,6 +16,13 @@
         padding-top: 137px;
     }
 
+    @include abstracts.adjust-for(abstracts.$desktop){
+        background: url('../assets/images/home-hero-desktop.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 153px;
+        text-align: left;
+    }
     
     h3 {
         width: 311px;
@@ -28,6 +35,11 @@
             font-size: 56px;
             line-height: 56px;    
         }
+
+        @include abstracts.adjust-for(abstracts.$desktop){
+            width: 500px;
+            margin-left: 165px;    
+        }
     }
 
     p {
@@ -38,6 +50,69 @@
 
         @include abstracts.adjust-for(abstracts.$tablets){
             width: 573px;   
+        }
+
+        @include abstracts.adjust-for(abstracts.$desktop){
+            width: 405px; 
+            height: 100px;
+            margin-top: 40px;
+            margin-left: 260px;  
+        }
+    }
+
+    button {
+        @include abstracts.adjust-for(abstracts.$desktop){
+            margin-left: 260px;
+        }
+    }
+
+    #hero-line {
+        display: none;
+
+        @include abstracts.adjust-for(abstracts.$desktop){
+            display: block;
+            position: absolute;
+            top: 349px; 
+        }
+       
+    }
+
+    #hero-arrow {
+        width: 452px;
+        position: absolute;
+        top: 471.59px;
+        left: -317px;
+
+        @include abstracts.adjust-for(abstracts.$tablets){
+            top: 467.59px;
+            left: -127px;
+            
+        }
+
+        @include abstracts.adjust-for(abstracts.$desktop){
+            top: 345px;
+            left: 705px;
+            
+        }
+
+    }
+
+    #hero-circles {
+        display: none;
+
+        @include abstracts.adjust-for(abstracts.$tablets){
+           display: block;
+           width: 203px;
+           height: 63px;
+           position: absolute;
+           top: 542px;
+           right: 0;  
+        }
+
+        @include abstracts.adjust-for(abstracts.$desktop){
+            width: 186px;
+            top: 422.5px;
+            right: 0;   
         }
     }
 }
