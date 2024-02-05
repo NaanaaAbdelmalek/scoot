@@ -1,0 +1,96 @@
+@use '../abstracts';
+
+.howto {
+
+    @include abstracts.adjust-for(abstracts.$tablets){
+        display: flex;
+        width: 573px;
+        margin: auto;
+        padding-top: 122px;
+        position: relative;   
+    }
+    
+    .steps-icons {
+        display: none;
+
+        @include abstracts.adjust-for(abstracts.$tablets){
+            display: flex;
+            flex-direction: column;
+
+            #step-icon:not(:last-child){
+                margin-bottom: 74px;
+                margin-right: 79px;
+            }
+
+            &::after {
+                content: '';
+                background-color: hsl(213, 40, 93);
+                height: 512px;
+                width: 15px;
+                position: absolute;
+                top: 0;
+                left: 40px;
+                z-index: -1;
+            }
+        }
+
+    }
+
+    .howto-steps {
+        display: flex;
+        flex-direction: column;
+        width: 311px;
+        margin: auto;
+        margin-top: 120px;
+
+        @include abstracts.adjust-for(abstracts.$tablets){
+            width: 398px;
+            margin: 0;   
+        }
+    }
+
+    .howto-steps .step:not(:first-child) {
+        margin-top: 48px;
+    }
+
+    .step {
+        text-align: center;
+        
+        @include abstracts.adjust-for(abstracts.$tablets){
+            text-align: left;
+        }
+    }
+
+    #step-icon-mobile {
+
+        @include abstracts.adjust-for(abstracts.$tablets){
+            display: none;
+        }
+    }
+
+    .step p:first-of-type {
+        color: #495567;
+        font-family: "Space Mono";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: -0.893px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+
+        @include abstracts.adjust-for(abstracts.$tablets){
+            margin-top: 0;
+        }
+    }
+
+    .step p:last-of-type {
+        color: #939CAA;
+        font-family: "Lexend Deca";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;  
+    }
+
+}
