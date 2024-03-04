@@ -12,10 +12,22 @@
 
     @include abstracts.adjust-for(abstracts.$desktop){
        flex-direction: column;
-       width: 1275px;
-       padding-top: 160px;
-       padding-left:165px ;
-       margin: 0;   
+       width: 100%;
+       padding-top: 0;
+       margin: 0;
+       position: relative;
+       
+       &::after {
+        content: '';
+        background-color: hsl(213, 40, 93);
+        height: 15px;
+        width: 67.6%;
+        position: absolute;
+        top: 198px;
+        left: 0;
+        z-index: -1;
+        
+    }
     }
     
     .steps-icons {
@@ -24,10 +36,10 @@
         @include abstracts.adjust-for(abstracts.$tablets){
             display: flex;
             flex-direction: column;
+            margin-right: 79px;
 
-            #step-icon:not(:last-child){
+            .step-icon-tablets:not(:last-child){
                 margin-bottom: 74px;
-                margin-right: 79px;
             }
 
             &::after {
@@ -43,23 +55,7 @@
         }
 
         @include abstracts.adjust-for(abstracts.$desktop){
-            flex-direction: row;
-            
-            #step-icon:not(:last-child){
-                margin-bottom: 40px;
-                margin-right: 284px;
-            }
-
-            &::after {
-                content: '';
-                background-color: hsl(213, 40, 93);
-                height: 15px;
-                width: 974px;
-                position: absolute;
-                top: 198px;
-                left: 0;
-                
-            }
+            display: none;
         }
 
     }
@@ -67,19 +63,20 @@
     .howto-steps {
         display: flex;
         flex-direction: column;
-        width: 311px;
+        align-items: center;
         margin: auto;
         margin-top: 120px;
 
         @include abstracts.adjust-for(abstracts.$tablets){
-            width: 398px;
             margin: 0;   
         }
 
         @include abstracts.adjust-for(abstracts.$desktop){
             flex-direction: row;
             justify-content: space-between;
-            width: 100%;
+            width: 77.1%;
+            padding-top: 160px;
+            margin-left: 12.9%;   
         }
 
         .step {
@@ -92,8 +89,7 @@
             }
 
             @include abstracts.adjust-for(abstracts.$desktop){
-                width: 350px;
-
+                width: 31.5%;
             }
             
             &:not(:first-child) {
@@ -109,10 +105,17 @@
                 @include abstracts.adjust-for(abstracts.$tablets){
                     display: none;
                 }
+
+                @include abstracts.adjust-for(abstracts.$desktop){
+                    display: block;
+                    width: 96px;
+                    height: 96px;
+
+                }
             }
         
             & p:first-of-type {
-                color: #495567;
+                color: abstracts.$dark-navy;
                 font-family: "Space Mono";
                 font-size: 20px;
                 font-style: normal;
@@ -125,15 +128,28 @@
                 @include abstracts.adjust-for(abstracts.$tablets){
                     margin-top: 0;
                 }
+
+                @include abstracts.adjust-for(abstracts.$desktop){
+                    margin-top: 24px;
+                }
             }
         
             & p:last-of-type {
-                color: #939CAA;
+                color: abstracts.$dim-grey;
                 font-family: "Lexend Deca";
                 font-size: 15px;
                 font-style: normal;
                 font-weight: 400;
-                line-height: 25px;  
+                line-height: 25px;
+                
+                // @include abstracts.adjust-for(abstracts.$tablets){
+                //     width: 398px;
+                // }
+
+                // @include abstracts.adjust-for(abstracts.$desktop){
+                //     width: 80%;
+                // }
+                   
             }
         }
 

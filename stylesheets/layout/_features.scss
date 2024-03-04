@@ -1,0 +1,158 @@
+@use '../abstracts';
+
+.features {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 120px;
+
+    @include abstracts.adjust-for(abstracts.$tablets){
+        margin-top: 145px;            
+    }
+    
+    @include abstracts.adjust-for(abstracts.$desktop){
+        margin-top: 200px;            
+    }
+    
+    .feature-description {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 120px;
+        text-align: center;
+
+        @include abstracts.adjust-for(abstracts.$tablets){
+            // width: 573px;
+            position: relative;
+        }
+
+        @include abstracts.adjust-for(abstracts.$desktop){
+            height: 445px;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            text-align: unset;
+            padding-right: 165px;
+
+        }
+
+        .circle {
+            
+            display: none;
+
+            @include abstracts.adjust-for(abstracts.$tablets){
+                display: block;
+                transform: rotate(180deg);
+                position: absolute;
+                left: 0;
+            }
+        }
+
+
+        .feature-image {
+            width: 311px;
+            height: 311px;
+            margin-bottom: 56px;
+
+            @include abstracts.adjust-for(abstracts.$tablets){
+                width: 445px;
+                height: 445px;     
+            }
+
+            @include abstracts.adjust-for(abstracts.$desktop){
+                margin-left: 165px;
+                margin-bottom: 0;    
+            }
+
+            img {
+
+                width: 311px;
+                height:311px;
+                border-radius: 50%;
+
+                @include abstracts.adjust-for(abstracts.$tablets){
+                    width: 445px;
+                    height: 445px;
+               }
+            }
+        }
+
+        .feature-info {
+            width: 311px;
+            text-align: -webkit-center;
+
+            @include abstracts.adjust-for(abstracts.$tablets){
+                width: 573px;
+                
+            }
+
+            @include abstracts.adjust-for(abstracts.$desktop){
+                width: 445px;
+                text-align: left;
+                
+            }
+
+            h3 {
+    
+                font-size: 32px;
+                line-height: 2rem;
+                margin-bottom: 32px;
+
+                @include abstracts.adjust-for(abstracts.$tablets){
+                    width: 457px;
+                    font-size: 48px;
+                    line-height: 3rem;
+                    margin-bottom: 40px;
+                }
+
+                @include abstracts.adjust-for(abstracts.$desktop){
+                    margin: 0;
+                    margin-bottom: 24px;
+                }
+            }
+            p { 
+                color: abstracts.$dim-grey;
+                margin-bottom: 32px;
+
+                @include abstracts.adjust-for(abstracts.$tablets){
+                    margin-bottom: 40px;
+                }
+            }
+        }
+
+
+    }
+
+    .rev-row {
+
+        @include abstracts.adjust-for(abstracts.$tablets){ 
+
+            .circle {
+                @include abstracts.adjust-for(abstracts.$tablets){
+                    transform: none;
+                    left: auto;
+                    right: 0;
+                }
+            }
+            
+        }
+    
+        @include abstracts.adjust-for(abstracts.$desktop){ 
+            flex-direction: row-reverse;
+            padding-right: 0;
+            padding-left: 165px;
+
+            .feature-image {
+    
+                @include abstracts.adjust-for(abstracts.$desktop){
+                    margin-left: 0;
+                    margin-right: 165px;  
+                }
+        }
+        
+    }
+
+}
+
+}

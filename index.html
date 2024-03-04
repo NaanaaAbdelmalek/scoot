@@ -65,7 +65,7 @@
 
       <h3>Scooter sharing made simple</h3>
 
-      <svg id="hero-line" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+      <svg id="hero-line" xmlns="http://www.w3.org/2000/svg" width="203" height="14">
         <path fill="none" stroke="#FCB72B" stroke-width="15" d="M203 7.5H.5" />
       </svg>
 
@@ -73,12 +73,15 @@
         locations in each of our cities. Use our app to locate the nearest bike, unlock
         it with a tap, and you’re away!</p>
 
-      <svg id="hero-arrow" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
-        <g fill="none" fill-rule="evenodd" stroke="#FCB72B" stroke-linejoin="bevel" stroke-width="15">
-          <path d="M407.952 145.444l38.426-38.426-38.426-38.426" />
-          <path d="M0 8h270.115v99.369h176.263" />
-        </g>
-      </svg>
+      <div class="hero-arrow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="150" viewBox="220 0 150 150" preserveAspectRatio="xMidYMid meet">
+          <g fill="none" fill-rule="evenodd" stroke="#FCB72B" stroke-linejoin="bevel" stroke-width="15">
+            <path d="M407.952 145.444l38.426-38.426-38.426-38.426" />
+            <path d="M0 8h270.115v99.369h176.263" />
+          </g>
+        </svg>
+      </div>
+
 
       <svg id="hero-circles" xmlns="http://www.w3.org/2000/svg" width="234" height="63">
         <g fill="none" fill-rule="evenodd">
@@ -96,7 +99,7 @@
     <div class="howto">
 
       <div class="steps-icons">
-        <svg class="app" id="step-icon" xmlns="http://www.w3.org/2000/svg" width="96px" height="96px" viewBox="0 0 100 100">
+        <svg class="step-icon-tablets" xmlns="http://www.w3.org/2000/svg" width="96px" height="96px" viewBox="0 0 100 100">
           <g fill="none" fill-rule="evenodd">
             <circle cx="48" cy="48" r="48" fill="#FCB72B" />
             <path fill="#495567" fill-rule="nonzero"
@@ -104,7 +107,7 @@
           </g>
         </svg>
   
-        <svg id="step-icon" xmlns="http://www.w3.org/2000/svg" width="96px" height="96px" viewBox="0 0 100 100">
+        <svg class="step-icon-tablets" xmlns="http://www.w3.org/2000/svg" width="96px" height="96px" viewBox="0 0 100 100">
           <g fill="none" fill-rule="evenodd">
             <circle cx="48" cy="48" r="48" fill="#FCB72B" />
             <g fill-rule="nonzero">
@@ -117,7 +120,7 @@
           </g>
         </svg>
 
-        <svg id="step-icon" xmlns="http://www.w3.org/2000/svg" width="96px" height="96px" viewBox="0 0 100 100">
+        <svg class="step-icon-tablets" xmlns="http://www.w3.org/2000/svg" width="96px" height="96px" viewBox="0 0 100 100">
           <g fill="none" fill-rule="evenodd">
             <circle cx="48" cy="48" r="48" fill="#FCB72B" />
             <path fill="#495567" fill-rule="nonzero"
@@ -172,43 +175,95 @@
             and you’re off! Always lock bikes away from walkways and accessibility ramps.</p>
         </div>
       </div>
+    </div>
 
+    <div class="features">
+
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 60% 100">
+        <g fill="none" fill-rule="evenodd" stroke="#FCB72B" stroke-linejoin="bevel" stroke-width="15">
+          <path d="M740.969 8H182.854v99.369H6.591"/><path d="M44.64 145.64L6.214 107.214 44.64 68.787"/>
+        </g>
+      </svg> -->
+
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" width="445" height="445">
+        <circle cx="302.5" cy="222.5" r="222.5" fill="#E5ECF4" fill-rule="evenodd" transform="translate(-80)"/>
+      </svg> -->
+
+      <div class="feature-description rev-row">
+
+        <div class="circle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="111" height="445">
+            <circle cx="302.5" cy="222.5" r="222.5" fill="#E5ECF4" fill-rule="evenodd" transform="translate(-80)"/>
+          </svg>
+        </div>
+
+        <div class="feature-image">
+          <img src="assets/images/telemetry.jpg" alt="telemetry">
+        </div>
+
+        <div class="feature-info">
+          <h3>Easy to use riding telemetry</h3>
+        <p>  The Scoot app is available with riding telemetry. This means it can show you your 
+          average speed, how long you've been using the scooter, your traveling distance, 
+          and many more things all in an easy to use app.</p>
+        <button><a href="#">Learn more</a></button>
+        </div>
+      
+      </div>
+
+      <div class="feature-description">
+
+        <div class="circle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="111" height="445">
+            <circle cx="302.5" cy="222.5" r="222.5" fill="#E5ECF4" fill-rule="evenodd" transform="translate(-80)"/>
+          </svg>
+        </div>
+
+        <div class="feature-image">
+          <img src="assets/images/near-you.jpg" alt="near-you">
+          
+        </div>
+        
+        <div class="feature-info">
+          <h3>Coming to a city near you</h3>
+        <p>Scoot is available in 4 major cities so far. We’re expanding rapidly, so be sure 
+          to let us know if you want to see us in your hometown. We’re aiming to let our 
+          scooters loose on 23 cities over the coming year.</p>
+        <button><a href="#">Learn more</a></button>
+      </div>
+       
+      </div>
+
+      <div class="feature-description rev-row">
+
+        <div class="circle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="111" height="445">
+            <circle cx="302.5" cy="222.5" r="222.5" fill="#E5ECF4" fill-rule="evenodd" transform="translate(-80)"/>
+          </svg>
+        </div>
+
+        <div class="feature-image">
+          <img src="assets/images/payments.jpg" alt="payments">
+        </div>
+        
+        <div class="feature-info">
+          <h3> Zero hassle payments</h3>
+        <p>Our payment is as easy as one two three. We accept most credit cards and debit cards. 
+          You can also link your PayPal account inside the app. Need to pay later? No worries! 
+          You can defer payment for up to a month.</p>
+        <button><a href="#">Learn more</a></button>
+      </div>
+      
+      </div>
 
     </div>
 
-
-
-
-
-
-
     <!-- 
-
   
 
+ 
 
-
-  Easy to use riding telemetry
-
-  The Scoot app is available with riding telemetry. This means it can show you your 
-  average speed, how long you've been using the scooter, your traveling distance, 
-  and many more things all in an easy to use app.
-
-  Learn More
-
-  Coming to a city near you
-
-  Scoot is available in 4 major cities so far. We’re expanding rapidly, so be sure 
-  to let us know if you want to see us in your hometown. We’re aiming to let our 
-  scooters loose on 23 cities over the coming year.
-
-  Learn More
-
-  Zero hassle payments
-
-  Our payment is as easy as one two three. We accept most credit cards and debit cards. 
-  You can also link your PayPal account inside the app. Need to pay later? No worries! 
-  You can defer payment for up to a month.
+  
 
   Learn More
 

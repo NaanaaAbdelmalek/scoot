@@ -77,7 +77,7 @@
        
     }
 
-    #hero-arrow {
+    .hero-arrow {
         width: 452px;
         position: absolute;
         top: 471.59px;
@@ -85,13 +85,14 @@
 
         @include abstracts.adjust-for(abstracts.$tablets){
             top: 467.59px;
-            left: -127px;
-            
+            left: -127px;  
         }
 
         @include abstracts.adjust-for(abstracts.$desktop){
+            width: 31.1%;
             top: 345px;
             left: 705px;
+            z-index: 1;
             
         }
 
