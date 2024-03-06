@@ -61,7 +61,7 @@
             }
 
             @include abstracts.adjust-for(abstracts.$desktop){
-                margin-left: 165px;
+                margin-left: 11.46%;
                 margin-bottom: 0;    
             }
 
@@ -88,7 +88,7 @@
             }
 
             @include abstracts.adjust-for(abstracts.$desktop){
-                width: 445px;
+                width: 30.9%;
                 text-align: left;
                 
             }
@@ -107,6 +107,7 @@
                 }
 
                 @include abstracts.adjust-for(abstracts.$desktop){
+                    width: 100%;
                     margin: 0;
                     margin-bottom: 24px;
                 }
@@ -141,13 +142,13 @@
         @include abstracts.adjust-for(abstracts.$desktop){ 
             flex-direction: row-reverse;
             padding-right: 0;
-            padding-left: 165px;
+            padding-left: 11.46%;
 
             .feature-image {
     
                 @include abstracts.adjust-for(abstracts.$desktop){
                     margin-left: 0;
-                    margin-right: 165px;  
+                    margin-right: 11.46%;  
                 }
         }
         
