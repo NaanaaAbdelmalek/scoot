@@ -1,0 +1,23 @@
+// styles for different arrow patterns
+
+@use '../abstracts';
+
+.left-downward {
+    display: none;
+
+    @include abstracts.adjust-for(abstracts.$tablets){
+        display: block;
+        width: 734px;
+        height: 151px;
+        position: absolute;
+        top: 298px;
+        right: 0;
+        z-index: 999;
+    }
+
+    @include abstracts.adjust-for(abstracts.$desktop) {
+        width: 57.6%;
+        max-width: 737px;     
+    }
+    
+}

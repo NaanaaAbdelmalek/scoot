@@ -61,7 +61,7 @@
             }
 
             @include abstracts.adjust-for(abstracts.$desktop){
-                margin-left: 11.46%;
+                margin-left: 12.94%;
                 margin-bottom: 0;    
             }
 
@@ -148,7 +148,7 @@
     
                 @include abstracts.adjust-for(abstracts.$desktop){
                     margin-left: 0;
-                    margin-right: 11.46%;  
+                    margin-right: 12.94%;  
                 }
         }
         
