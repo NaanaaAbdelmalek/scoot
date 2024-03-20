@@ -1,0 +1,51 @@
+@use '../abstracts';
+
+.cta-section {
+    height: 320px;
+    background-color: abstracts.$dark-navy;
+    padding: 88px 32px 88px 32px;
+    
+    .cta-container {
+        width: 311px;
+        height: 144px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
+    }
+
+    p {
+        color: abstracts.$white;
+        font-size: 32px;
+        font-family: abstracts.$heading-font;
+        font-weight: bold;
+        line-height: 2rem;
+        letter-spacing: -1.43px;
+    }
+
+    .app-download {
+        height: 40px;
+        margin-top: 40px;    
+    }
+
+    .ios-app {
+        width: 113.57px; 
+        height: 40px;
+        margin-right: 12.68px;
+
+        rect {
+            width: 159px;
+            height: 56px;
+        }
+    }
+    .android-app {
+        width: 130px; 
+        height: 40px;
+
+        rect {
+            width: 182px;
+            height: 56px;
+        }
+    }
+
+}
