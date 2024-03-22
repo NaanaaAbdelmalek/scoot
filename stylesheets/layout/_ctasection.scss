@@ -1,17 +1,51 @@
 @use '../abstracts';
 
 .cta-section {
-    height: 320px;
     background-color: abstracts.$dark-navy;
     padding: 88px 32px 88px 32px;
     
+
+    @include abstracts.adjust-for(abstracts.$tablets) {
+        padding:  62px 156px 62px 155px;
+        position: relative;
+    }
+
+    @include abstracts.adjust-for(abstracts.$desktop) {
+        padding:  102px 11.46% 102px 11.46%;
+    }
+
+    .semi-circles {
+        display: none;
+
+        @include abstracts.adjust-for(abstracts.$tablets) {
+            display: block;
+            width: 995px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        
+    }
+    
     .cta-container {
         width: 311px;
-        height: 144px;
         display: flex;
         flex-direction: column;
         text-align: center;
         margin: auto;
+
+        @include abstracts.adjust-for(abstracts.$tablets) {
+            width: 457px;
+        }
+
+        @include abstracts.adjust-for(abstracts.$desktop) {
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            margin: 0;
+        }
     }
 
     p {
@@ -21,17 +55,39 @@
         font-weight: bold;
         line-height: 2rem;
         letter-spacing: -1.43px;
+
+        @include abstracts.adjust-for(abstracts.$tablets) {
+            font-size: 48px;
+            line-height: 3rem;
+            letter-spacing: -2.14px;
+        }
+
+        @include abstracts.adjust-for(abstracts.$desktop) {
+            width: 415px;
+        }
     }
 
     .app-download {
         height: 40px;
-        margin-top: 40px;    
+        margin-top: 40px;
+        
+        @include abstracts.adjust-for(abstracts.$desktop) {
+            width: 359px;
+            height: 56px;
+            margin: 0;
+        }
     }
 
     .ios-app {
         width: 113.57px; 
         height: 40px;
         margin-right: 12.68px;
+        
+        @include abstracts.adjust-for(abstracts.$desktop) {
+            width: 159px;
+            height: 56px;
+            margin-right: 13px;
+        }
 
         rect {
             width: 159px;
@@ -41,6 +97,11 @@
     .android-app {
         width: 130px; 
         height: 40px;
+
+        @include abstracts.adjust-for(abstracts.$desktop) {
+            width: 182px;
+            height: 56px;
+        }
 
         rect {
             width: 182px;
