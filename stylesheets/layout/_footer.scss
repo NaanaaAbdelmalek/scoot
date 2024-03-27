@@ -1,0 +1,88 @@
+@use '../abstracts';
+
+footer {
+    
+    height: 438px;
+    padding: 64px 127px 88px 128px;
+    background-color: #333A44;
+    
+    
+    @include abstracts.adjust-for(abstracts.$tablets) {
+        height: 96px;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 120px;
+        height: 286px;
+        margin: auto;
+        
+    
+
+        .logo {
+            width: 107.817px;
+            height: 28.56px;
+            
+            @include abstracts.adjust-for(abstracts.$tablets) {
+                
+                flex: 0 1 auto;
+                margin-right: 0;
+                margin-left: 5.1%;
+            }
+    
+            @include abstracts.adjust-for(abstracts.$desktop) {
+                margin-left: 11.7%;
+            }
+        }
+    
+        .header-links {
+            text-align: center;
+            
+    
+            @include abstracts.adjust-for(abstracts.$tablets) {
+                display: block;
+                flex: 1;
+                padding-left: 3.64rem;
+                text-align: left;  
+            }
+        }
+    
+        ul li {
+            margin-bottom: 16px;
+            
+            &:first-child {
+                margin-bottom: 14px;
+            }
+    
+            &:last-child {
+                margin-bottom: 0;
+            }
+    
+            @include abstracts.adjust-for(abstracts.$tablets) {
+                display: inline;
+                margin-right: 32px; 
+    
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+
+            a {
+                color: abstracts.$dim-grey;
+            }   
+        }
+
+        .social-icons {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: self-end;
+        }
+    }
+    
+    
+
+}
