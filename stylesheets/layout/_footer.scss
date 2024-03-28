@@ -9,6 +9,12 @@ footer {
     
     @include abstracts.adjust-for(abstracts.$tablets) {
         height: 96px;
+        padding: 35px 39px 32px 40px;
+    }
+
+    @include abstracts.adjust-for(abstracts.$desktop) {
+        
+        padding: 35px 11.46% 32px 11.67%;
     }
 
     .footer-container {
@@ -19,6 +25,12 @@ footer {
         width: 120px;
         height: 286px;
         margin: auto;
+
+        @include abstracts.adjust-for(abstracts.$tablets){
+            flex-direction: row;
+            width: 100%;
+            height: 29px;
+        }
         
     
 
@@ -27,14 +39,13 @@ footer {
             height: 28.56px;
             
             @include abstracts.adjust-for(abstracts.$tablets) {
-                
                 flex: 0 1 auto;
                 margin-right: 0;
-                margin-left: 5.1%;
+                // margin-left: 5.1%;
             }
     
             @include abstracts.adjust-for(abstracts.$desktop) {
-                margin-left: 11.7%;
+                // margin-left: 11.7%;
             }
         }
     
@@ -80,6 +91,10 @@ footer {
             display: flex;
             justify-content: space-between;
             align-items: self-end;
+
+            @include abstracts.adjust-for(abstracts.$tablets){
+                width: 120px;
+            }
         }
     }
     
