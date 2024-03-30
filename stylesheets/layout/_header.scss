@@ -74,7 +74,7 @@ header {
         }
     }
 
-    button {
+    .button {
         display: none;
 
         @include abstracts.adjust-for(abstracts.$tablets) {

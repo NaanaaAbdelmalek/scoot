@@ -42,6 +42,7 @@
         }
     }
 
+
     p {
         width: 311px;
         margin: auto;
@@ -60,7 +61,7 @@
         }
     }
 
-    button {
+    .button {
         @include abstracts.adjust-for(abstracts.$desktop){
             margin-left: 260px;
         }
@@ -89,9 +90,10 @@
         }
 
         @include abstracts.adjust-for(abstracts.$desktop){
-            width: 31.1%;
+            width: 31.38%;
             top: 345px;
-            left: 705px;
+            right: 20.1%;
+            left: 49%;
             z-index: 1;
             
         }
