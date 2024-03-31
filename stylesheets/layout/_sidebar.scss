@@ -2,7 +2,7 @@
 
 @use '../abstracts';
 
-.side-bar {
+#side-bar {
 
     position: absolute;
     top: 0;
@@ -15,19 +15,22 @@
     transition: left 0.5s ease-in-out;
     z-index: 1;
 
-    ul {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        gap: 24px;
-        width: 89px;
-        height: 123px;
-    }
+    #sidebar-links {
 
-    ul li a {
-        color: abstracts.$light-grey;
-        font-size: 1.125rem;
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 24px;
+            width: 89px;
+            height: 123px;
+        }
+    
+        ul li a {
+            color: abstracts.$light-grey;
+            font-size: 1.125rem;
+        }
     }
 
     .button {

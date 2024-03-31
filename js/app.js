@@ -1,7 +1,7 @@
 
 const Hamburger = document.querySelector(".hamburger");
 const CloseIcon = document.querySelector(".closeicon")
-const SideBar = document.querySelector(".side-bar");
+const SideBar = document.querySelector("#side-bar");
 const overlay = document.querySelector(".overlay");
 
 

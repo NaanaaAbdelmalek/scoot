@@ -13,7 +13,8 @@ footer {
     }
 
     @include abstracts.adjust-for(abstracts.$desktop) {
-        
+        max-width: 1440px;
+        margin: auto;
         padding: 35px 11.46% 32px 11.67%;
     }
 
@@ -49,7 +50,7 @@ footer {
             }
         }
     
-        .header-links {
+        #footer-links {
             text-align: center;
             
     

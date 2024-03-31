@@ -55,7 +55,7 @@ header {
         }
     }
 
-    .header-links {
+    #header-links {
         display: none;
 
         @include abstracts.adjust-for(abstracts.$tablets) {
