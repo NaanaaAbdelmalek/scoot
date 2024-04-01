@@ -114,14 +114,8 @@
                 }
             }
         
-            & p:first-of-type {
+            h4 {
                 color: abstracts.$dark-navy;
-                font-family: "Space Mono";
-                font-size: 20px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 28px;
-                letter-spacing: -0.893px;
                 margin-top: 24px;
                 margin-bottom: 24px;
         
@@ -134,22 +128,14 @@
                 }
             }
         
-            & p:last-of-type {
+            p {
                 color: abstracts.$dim-grey;
                 font-family: "Lexend Deca";
                 font-size: 15px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 25px;
-                
-                // @include abstracts.adjust-for(abstracts.$tablets){
-                //     width: 398px;
-                // }
-
-                // @include abstracts.adjust-for(abstracts.$desktop){
-                //     width: 80%;
-                // }
-                   
+               
             }
         }
 
@@ -157,49 +143,5 @@
 
         
     }
-
-    // .howto-steps .step:not(:first-child) {
-    //     margin-top: 48px;
-    // }
-
-    // .step {
-    //     text-align: center;
-        
-    //     @include abstracts.adjust-for(abstracts.$tablets){
-    //         text-align: left;
-    //     }
-    // }
-
-    // #step-icon-mobile {
-
-    //     @include abstracts.adjust-for(abstracts.$tablets){
-    //         display: none;
-    //     }
-    // }
-
-    // .step p:first-of-type {
-    //     color: #495567;
-    //     font-family: "Space Mono";
-    //     font-size: 20px;
-    //     font-style: normal;
-    //     font-weight: 700;
-    //     line-height: 28px;
-    //     letter-spacing: -0.893px;
-    //     margin-top: 24px;
-    //     margin-bottom: 24px;
-
-    //     @include abstracts.adjust-for(abstracts.$tablets){
-    //         margin-top: 0;
-    //     }
-    // }
-
-    // .step p:last-of-type {
-    //     color: #939CAA;
-    //     font-family: "Lexend Deca";
-    //     font-size: 15px;
-    //     font-style: normal;
-    //     font-weight: 400;
-    //     line-height: 25px;  
-    // }
 
 }

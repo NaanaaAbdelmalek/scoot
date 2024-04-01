@@ -93,16 +93,11 @@
                 
             }
 
-            h3 {
-    
-                font-size: 32px;
-                line-height: 2rem;
+            h2 {
                 margin-bottom: 32px;
 
                 @include abstracts.adjust-for(abstracts.$tablets){
                     width: 457px;
-                    font-size: 48px;
-                    line-height: 3rem;
                     margin-bottom: 40px;
                 }
 

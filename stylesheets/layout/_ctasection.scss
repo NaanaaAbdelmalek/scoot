@@ -48,19 +48,8 @@
         }
     }
 
-    p {
+    h2 {
         color: abstracts.$white;
-        font-size: 32px;
-        font-family: abstracts.$heading-font;
-        font-weight: bold;
-        line-height: 2rem;
-        letter-spacing: -1.43px;
-
-        @include abstracts.adjust-for(abstracts.$tablets) {
-            font-size: 48px;
-            line-height: 3rem;
-            letter-spacing: -2.14px;
-        }
 
         @include abstracts.adjust-for(abstracts.$desktop) {
             width: 415px;

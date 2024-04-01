@@ -22,27 +22,51 @@ h4 {
 }
 
 h1 {
-    font-size: 3.5rem;
-    line-height: 3.5rem; /* 100% */
-    letter-spacing: -2.5px;
+    font-size: 2.5rem;
+    line-height: 2.5rem; /* 100% */
+    letter-spacing: -0.111875rem;
+
+    @include abstracts.adjust-for(abstracts.$tablets){
+        font-size: 3.5rem;
+        line-height: 3.5rem; /* 100% */
+        letter-spacing: -0.15625rem;
+    }
 }
 
 h2 {
-    font-size: 3rem;
-    line-height: 3rem; /* 100% */
-    letter-spacing: -2.143px;
+    font-size: 2rem;
+    line-height: 2rem; /* 100% */
+    letter-spacing: -0.089375rem;
+
+    @include abstracts.adjust-for(abstracts.$tablets){
+        font-size: 3rem;
+        line-height: 3rem; /* 100% */
+        letter-spacing: -0.13375rem;
+    }
 }
 
 h3 {
-    font-size: 2.5rem;
-    line-height: 3rem; /* 120% */
-    letter-spacing: -1.786px;
+    font-size: 1.5rem;
+    line-height: 1.75rem; /* 120% */
+    letter-spacing: -0.066875rem;
+
+    @include abstracts.adjust-for(abstracts.$tablets){
+        font-size: 2.5rem;
+        line-height: 3rem; /* 100% */
+        letter-spacing: -0.111875rem;
+    }
 }
 
 h4 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     line-height: 1.75rem; /* 116.667% */
-    letter-spacing: -1.071px;
+    letter-spacing: -0.055625rem;
+
+    @include abstracts.adjust-for(abstracts.$tablets){
+        font-size: 1.5rem;
+        line-height: 1.75rem; /* 100% */
+        letter-spacing: -0.066875rem;
+    }
 }
 
 a {
