@@ -11,7 +11,7 @@
     width: 68.27%;
     height: 100vh;
     background-color: abstracts.$dark-grayish-blue;
-    padding: 64px 32px 24px 32px;
+    padding: 4rem 2rem 1.5rem 2rem;
     transition: left 0.5s ease-in-out;
     z-index: 1;
 
@@ -22,9 +22,9 @@
             flex-direction: column;
             align-items: flex-start;
             justify-content: center;
-            gap: 24px;
-            width: 89px;
-            height: 123px;
+            gap: 1.5rem;
+            width: 5.5625rem;
+            height: 7.6875rem;
         }
     
         ul li a {
@@ -34,7 +34,8 @@
     }
 
     .button {
-        margin-top: 339px;
+        width: 100%;
+        margin-top: 21.1875rem;
     }
 
     @include abstracts.adjust-for (abstracts.$tablets) {

@@ -1,65 +1,66 @@
 @use '../abstracts';
 
 .hero {
-    height: 650px;
+    height: 40.625rem;
     background: url('../assets/images/home-hero-mobile.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     color: abstracts.$white;
     text-align: center;
-    padding-top: 115px;
+    padding-top: 7.1875rem;
     
     @include abstracts.adjust-for(abstracts.$tablets){
         background: url('../assets/images/home-hero-tablet.jpg');
         background-size: cover;
         background-repeat: no-repeat;
-        padding-top: 137px;
+        padding-top: 8.5625rem;
     }
 
     @include abstracts.adjust-for(abstracts.$desktop){
         background: url('../assets/images/home-hero-desktop.jpg');
         background-size: cover;
         background-repeat: no-repeat;
-        padding-top: 153px;
+        padding-top: 9.5625rem;
         text-align: left;
     }
     
     h1 {
-        max-width: 311px;
+        max-width: 19.4375rem;
         margin: auto;
 
         @include abstracts.adjust-for(abstracts.$tablets){
-            max-width: 573px;  
+            max-width: 35.8125rem;  
         }
 
         @include abstracts.adjust-for(abstracts.$desktop){
-            max-width: 500px;
-            margin-left: 165px;    
+            max-width: 31.25rem;
+            margin-left: 10.3125rem;    
         }
     }
 
 
     p {
-        width: 311px;
+        color: abstracts.$white;
+        max-width: 19.4375rem;
         margin: auto;
-        margin-top: 24px;
-        margin-bottom: 48px;
+        margin-top: 1.5rem;
+        margin-bottom: 3rem;
 
         @include abstracts.adjust-for(abstracts.$tablets){
-            width: 573px;   
+            max-width: 35.8125rem;   
         }
 
         @include abstracts.adjust-for(abstracts.$desktop){
-            width: 405px; 
-            height: 100px;
-            margin-top: 40px;
-            margin-left: 260px;  
+            max-width: 25.3125rem; 
+            height: 6.25rem;
+            margin-top: 2.5rem;
+            margin-left: 16.25rem;  
         }
     }
 
     .button {
         @include abstracts.adjust-for(abstracts.$desktop){
-            margin-left: 260px;
+            margin-left: 16.25rem;
         }
     }
 
@@ -69,27 +70,27 @@
         @include abstracts.adjust-for(abstracts.$desktop){
             display: block;
             position: absolute;
-            top: 349px; 
+            top: 21.8125rem; 
         }
        
     }
 
     .hero-arrow {
-        width: 452px;
+        width: 28.25rem;
         position: absolute;
-        top: 471.59px;
-        left: -317px;
+        top: 29.474375rem;
+        left: -19.8125rem;
 
         @include abstracts.adjust-for(abstracts.$tablets){
-            top: 467.59px;
-            left: -127px;  
+            top: 29.1625rem;
+            left: -7.7rem;  
         }
 
         @include abstracts.adjust-for(abstracts.$desktop){
             width: 31.38%;
-            top: 345px;
+            top: 21.5625rem;
             right: 20.1%;
-            left: 703px;
+            left: 43.9375rem;
             z-index: 1;
             
         }
@@ -101,16 +102,16 @@
 
         @include abstracts.adjust-for(abstracts.$tablets){
            display: block;
-           width: 203px;
-           height: 63px;
+           width: 12.6875rem;
+           height: 3.9375rem;
            position: absolute;
-           top: 542px;
+           top: 33.875rem;
            right: 0;  
         }
 
         @include abstracts.adjust-for(abstracts.$desktop){
-            width: 186px;
-            top: 422.5px;
+            width: 11.625rem;
+            top: 26.40625rem;
             right: 0;   
         }
     }

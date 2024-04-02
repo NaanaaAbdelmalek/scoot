@@ -8,17 +8,17 @@
 
     @include abstracts.adjust-for(abstracts.$tablets){
         display: block;
-        width: 734px;
-        height: 151px;
+        width: 45.875rem;
+        height: 9.438rem;
         position: absolute;
-        top: 298px;
+        top: 18.625rem;
         right: 0;
         z-index: 999;
     }
 
     @include abstracts.adjust-for(abstracts.$desktop) {
         width: 57.6%;
-        max-width: 737px;     
+        max-width: 46.063rem;     
     }   
 }
 
@@ -27,17 +27,17 @@
 
     @include abstracts.adjust-for(abstracts.$tablets){
         display: block;
-        width: 734px;
-        height: 151px;
+        width: 45.875rem;
+        height: 9.438rem;
         position: absolute;
-        top: 268px;
+        top: 16.75rem;
         right: 0;
         z-index: 999;
     }
 
     @include abstracts.adjust-for(abstracts.$desktop) {
         width: 57.6%;
-        max-width: 737px;     
+        max-width: 46.063rem;     
     }   
 }
 
@@ -48,17 +48,12 @@
     @include abstracts.adjust-for(abstracts.$tablets){
         display: block;
         position: absolute;
-        width: 367.65px;
-        height: 151px;
+        width: 22.978rem;
+        height: 9.438rem;
         top: 0;
         left: 0;
         z-index: 999;
     }
-
-    @include abstracts.adjust-for(abstracts.$desktop) {
-             
-    }   
-
 }
 
 .left-arrow {
@@ -67,16 +62,11 @@
     @include abstracts.adjust-for(abstracts.$tablets){
         display: block;
         position: absolute;
-        width: 381.65px;
-        height: 151px;
-        top: 72px;
+        width: 23.854rem;
+        height: 9.438rem;
+        top: 4.5rem;
         right: 0;
         z-index: 999;
         transform: rotateY(180deg);
     }
-
-    @include abstracts.adjust-for(abstracts.$desktop) {
-             
-    }   
-
 }

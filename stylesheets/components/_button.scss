@@ -3,55 +3,26 @@
 @use '../abstracts';
 
 
-// button {
-//     width: 192px;
-//     height: 53px;
-//     background-color: abstracts.$yellow;
-//     color: abstracts.$white;
-//     border: none;
-
-//     &:hover {
-//         background-color: abstracts.$white;
-//         border: 3px solid abstracts.$yellow;
-
-//         a {
-//             color: abstracts.$yellow;
-//         }
-//     }
-    
-//     a {
-//         color: abstracts.$white;
-//     }
-
-//     @include abstracts.adjust-for(abstracts.$tablets) {
-//         width: 180px;
-//     }
-
-//     @include abstracts.adjust-for(abstracts.$desktop) {
-//         width: 180px;
-//     }
-// }
-
 .button {
-    width: 192px;
-    height: 53px;
+    width: 12rem;
+    height: 3.3125rem;
     background-color: abstracts.$yellow;
     color: abstracts.$white;
     text-align: center;
-    line-height: 53px;
+    line-height: 3.3125rem;
 
     &:hover {
         background-color: abstracts.$white;
         color: abstracts.$yellow;
-        border: 3px solid abstracts.$yellow;
+        border: 0.1875rem solid abstracts.$yellow;
 
     }
 
     @include abstracts.adjust-for(abstracts.$tablets) {
-        width: 180px;
+        width: 11.25rem;
     }
 
     @include abstracts.adjust-for(abstracts.$desktop) {
-        width: 180px;
+        width: 11.25rem;
     }
 }

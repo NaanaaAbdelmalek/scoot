@@ -2,20 +2,20 @@
 
 footer {
     
-    height: 438px;
-    padding: 64px 127px 88px 128px;
+    // height: 438px;
+    padding: 4rem 7.9375rem 5.5rem 8rem;
     background-color: #333A44;
     
     
     @include abstracts.adjust-for(abstracts.$tablets) {
-        height: 96px;
-        padding: 35px 39px 32px 40px;
+        // height: 96px;
+        padding: 2.1875rem 2.4375rem 2rem 2.5rem;
     }
 
     @include abstracts.adjust-for(abstracts.$desktop) {
-        max-width: 1440px;
+        max-width: 90rem;
         margin: auto;
-        padding: 35px 11.46% 32px 11.67%;
+        padding: 2.1875rem 11.46% 2rem 11.67%;
     }
 
     .footer-container {
@@ -23,26 +23,25 @@ footer {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        width: 120px;
-        height: 286px;
+        max-width: 7.5rem;
+        height: 17.875rem;
         margin: auto;
 
         @include abstracts.adjust-for(abstracts.$tablets){
             flex-direction: row;
-            width: 100%;
-            height: 29px;
+            max-width: 100%;
+            height: 1.8125rem;
         }
         
     
 
         .logo {
-            width: 107.817px;
-            height: 28.56px;
+            width: 6.7385625rem;
+            height: 1.785rem;
             
             @include abstracts.adjust-for(abstracts.$tablets) {
                 flex: 0 1 auto;
                 margin-right: 0;
-                // margin-left: 5.1%;
             }
     
             @include abstracts.adjust-for(abstracts.$desktop) {
@@ -63,10 +62,10 @@ footer {
         }
     
         ul li {
-            margin-bottom: 16px;
+            margin-bottom: 1rem;
             
             &:first-child {
-                margin-bottom: 14px;
+                margin-bottom: 0.875rem;
             }
     
             &:last-child {
@@ -75,7 +74,7 @@ footer {
     
             @include abstracts.adjust-for(abstracts.$tablets) {
                 display: inline;
-                margin-right: 32px; 
+                margin-right: 2rem; 
     
                 &:last-child {
                     margin-right: 0;
@@ -94,7 +93,7 @@ footer {
             align-items: self-end;
 
             @include abstracts.adjust-for(abstracts.$tablets){
-                width: 120px;
+                width: 7.5rem;
             }
         }
     }

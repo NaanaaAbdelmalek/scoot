@@ -5,15 +5,15 @@
 header {
     display: flex;
     align-items: center;
-    height: 64px;
+    height: 4rem;
 
 
     @include abstracts.adjust-for(abstracts.$tablets) {
-        height: 96px;
+        height: 6rem;
     }
 
     @include abstracts.adjust-for(abstracts.$desktop) {
-        max-width: 1440px;
+        max-width: 90rem;
         margin: auto;
     }
     
@@ -43,8 +43,8 @@ header {
         margin-right: 39.86%;
 
         @include abstracts.adjust-for(abstracts.$tablets) {
-            width: 107.817px;
-            height: 28.56px;
+            width: 4.718875rem;
+            height: 1.785rem;
             flex: 0 1 auto;
             margin-right: 0;
             margin-left: 5.1%;
@@ -67,7 +67,7 @@ header {
 
     ul li {
         display: inline;
-        margin-right: 32px;
+        margin-right: 2rem;
 
         &:last-child {
             margin-right: 0;

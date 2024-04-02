@@ -4,15 +4,15 @@
 
     @include abstracts.adjust-for(abstracts.$tablets){
         display: flex;
-        width: 573px;
+        max-width: 35.8125rem;
         margin: auto;
-        padding-top: 122px;
+        padding-top: 7.625rem;
         position: relative;   
     }
 
     @include abstracts.adjust-for(abstracts.$desktop){
        flex-direction: column;
-       width: 100%;
+       max-width: 100%;
        padding-top: 0;
        margin: 0;
        position: relative;
@@ -20,10 +20,10 @@
        &::after {
         content: '';
         background-color: hsl(213, 40, 93);
-        height: 15px;
+        height: 0.9375rem;
         width: 67.6%;
         position: absolute;
-        top: 198px;
+        top: 12.375rem;
         left: 0;
         z-index: -1;
         
@@ -36,20 +36,20 @@
         @include abstracts.adjust-for(abstracts.$tablets){
             display: flex;
             flex-direction: column;
-            margin-right: 79px;
+            margin-right: 4.9375rem;
 
             .step-icon-tablets:not(:last-child){
-                margin-bottom: 74px;
+                margin-bottom: 4.625rem;
             }
 
             &::after {
                 content: '';
                 background-color: hsl(213, 40, 93);
-                height: 512px;
-                width: 15px;
+                height: 32rem;
+                width: 0.9375rem;
                 position: absolute;
                 top: 0;
-                left: 40px;
+                left: 2.5rem;
                 z-index: -1;
             }
         }
@@ -65,7 +65,7 @@
         flex-direction: column;
         align-items: center;
         margin: auto;
-        margin-top: 120px;
+        margin-top: 7.5rem;
 
         @include abstracts.adjust-for(abstracts.$tablets){
             margin: 0;   
@@ -75,25 +75,25 @@
             flex-direction: row;
             justify-content: space-between;
             width: 77.1%;
-            padding-top: 160px;
+            padding-top: 10rem;
             margin-left: 12.9%;   
         }
 
         .step {
-            width: 311px;
+            max-width: 19.4375rem;
             text-align: center;
 
             @include abstracts.adjust-for(abstracts.$tablets){
-                width: 398px;
+                max-width: 24.875rem;
                 text-align: left;
             }
 
             @include abstracts.adjust-for(abstracts.$desktop){
-                width: 31.5%;
+                max-width: 31.5%;
             }
             
             &:not(:first-child) {
-                margin-top: 48px;
+                margin-top: 3rem;
     
                 @include abstracts.adjust-for(abstracts.$desktop){
                     margin-top: 0;
@@ -108,35 +108,35 @@
 
                 @include abstracts.adjust-for(abstracts.$desktop){
                     display: block;
-                    width: 96px;
-                    height: 96px;
+                    max-width: 6rem;
+                    height: 6rem;
 
                 }
             }
         
             h4 {
                 color: abstracts.$dark-navy;
-                margin-top: 24px;
-                margin-bottom: 24px;
+                margin-top: 1.5rem;
+                margin-bottom: 1.5rem;
         
                 @include abstracts.adjust-for(abstracts.$tablets){
                     margin-top: 0;
                 }
 
                 @include abstracts.adjust-for(abstracts.$desktop){
-                    margin-top: 24px;
+                    margin-top: 1.5rem;
                 }
             }
         
-            p {
-                color: abstracts.$dim-grey;
-                font-family: "Lexend Deca";
-                font-size: 15px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 25px;
+            // p {
+            //     color: abstracts.$dim-grey;
+            //     font-family: "Lexend Deca";
+            //     font-size: 15px;
+            //     font-style: normal;
+            //     font-weight: 400;
+            //     line-height: 25px;
                
-            }
+            // }
         }
 
         
