@@ -1,14 +1,13 @@
 @use '../abstracts';
 
 footer {
-    
-    // height: 438px;
-    padding: 4rem 7.9375rem 5.5rem 8rem;
+
+    padding: 17.1% 33.9% 23.5% 34.13%;
     background-color: #333A44;
     
     
     @include abstracts.adjust-for(abstracts.$tablets) {
-        // height: 96px;
+
         padding: 2.1875rem 2.4375rem 2rem 2.5rem;
     }
 

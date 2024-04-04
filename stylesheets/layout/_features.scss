@@ -51,9 +51,9 @@
 
 
         .feature-image {
-            width: 19.4375rem;
-            height: 19.4375rem;
-            margin-bottom: 56px;
+            width: 82.9%;   // 19.4375rem
+            // height: 19.4375rem; // 19.4375rem
+            margin-bottom: 3.5rem;
 
             @include abstracts.adjust-for(abstracts.$tablets){
                 width: 27.8125rem;
@@ -67,8 +67,9 @@
 
             img {
 
-                width: 19.4375rem;
-                height:19.4375rem;
+                width: 100%;
+                height: 100%;
+                display: block;
                 border-radius: 50%;
 
                 @include abstracts.adjust-for(abstracts.$tablets){
