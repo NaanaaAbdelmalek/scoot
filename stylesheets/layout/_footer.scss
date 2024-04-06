@@ -94,6 +94,17 @@ footer {
             @include abstracts.adjust-for(abstracts.$tablets){
                 width: 7.5rem;
             }
+
+            a {
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+
+            svg {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
         }
     }
     

@@ -101,6 +101,8 @@
             }
         
             #step-icon-mobile {
+                width: 3.5rem;
+                height: 3.5rem;
         
                 @include abstracts.adjust-for(abstracts.$tablets){
                     display: none;
@@ -108,7 +110,7 @@
 
                 @include abstracts.adjust-for(abstracts.$desktop){
                     display: block;
-                    max-width: 6rem;
+                    width: 6rem;
                     height: 6rem;
 
                 }
