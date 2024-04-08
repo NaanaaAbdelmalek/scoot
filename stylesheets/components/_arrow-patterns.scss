@@ -33,6 +33,7 @@
         top: 16.75rem;
         right: 0;
         z-index: 999;
+        transform: rotatex(180deg);
     }
 
     @include abstracts.adjust-for(abstracts.$desktop) {

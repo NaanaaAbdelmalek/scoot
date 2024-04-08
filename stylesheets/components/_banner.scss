@@ -1,0 +1,44 @@
+@use '../abstracts';
+
+.banner {
+    background: url(../assets/images/about-hero-mobile.jpg);
+    background-size: cover;
+    text-align: center;
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+
+    @include abstracts.adjust-for(abstracts.$tablets){
+        background: url(../assets/images/about-hero-tablet.jpg);
+        position: relative;
+        text-align: left;
+        padding-top: 4.5rem;
+        padding-bottom: 4.5rem;
+    }
+
+    @include abstracts.adjust-for(abstracts.$desktop){
+        background: url(../assets/images/about-hero-desktop.jpg);
+        
+    }
+
+    h1{
+        color: abstracts.$white;
+        
+        @include abstracts.adjust-for(abstracts.$tablets){
+            margin-left: 12.63%;
+        
+        }
+
+        @include abstracts.adjust-for(abstracts.$desktop){
+            margin-left: 11.46%;
+        
+        }
+    }
+
+    .hero-circles {
+        
+        @include abstracts.adjust-for(abstracts.$tablets){
+            width: 12.6875rem;
+            top: 4.3125rem;
+        }
+    }
+}

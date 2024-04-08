@@ -101,22 +101,22 @@
 
     }
 
-    #hero-circles {
-        display: none;
+    // .hero-circles {
+    //     display: none;
 
-        @include abstracts.adjust-for(abstracts.$tablets){
-           display: block;
-           width: 12.6875rem;
-           height: 3.9375rem;
-           position: absolute;
-           top: 33.875rem;
-           right: 0;  
-        }
+    //     @include abstracts.adjust-for(abstracts.$tablets){
+    //        display: block;
+    //        width: 12.6875rem;
+    //        height: 3.9375rem;
+    //        position: absolute;
+    //        top: 33.875rem;
+    //        right: 0;  
+    //     }
 
-        @include abstracts.adjust-for(abstracts.$desktop){
-            width: 11.625rem;
-            top: 26.40625rem;
-            right: 0;   
-        }
-    }
+    //     @include abstracts.adjust-for(abstracts.$desktop){
+    //         width: 11.625rem;
+    //         top: 26.40625rem;
+    //         right: 0;   
+    //     }
+    // }
 }
