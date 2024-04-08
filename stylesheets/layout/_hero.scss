@@ -61,6 +61,10 @@
     .button {
         @include abstracts.adjust-for(abstracts.$desktop){
             margin-left: 16.25rem;
+            
+            &:hover{
+                background-color: transparent;
+            }
         }
     }
 

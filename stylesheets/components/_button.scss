@@ -11,11 +11,11 @@
     text-align: center;
     line-height: 3.3125rem;
 
+
     &:hover {
         background-color: abstracts.$white;
         color: abstracts.$yellow;
         border: 0.1875rem solid abstracts.$yellow;
-
     }
 
     @include abstracts.adjust-for(abstracts.$tablets) {
