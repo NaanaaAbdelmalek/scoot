@@ -2,6 +2,23 @@
 
 @use '../abstracts';
 
+.left-downward-mobile {
+    
+    width: 93.4%;
+    height: 45.65%;
+    position: absolute;
+    top: 52.73%;
+    right: 0;
+    
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    @include abstracts.adjust-for(abstracts.$tablets) {
+        display: none;     
+    }   
+}
 
 .left-downward {
     display: none;
@@ -19,6 +36,25 @@
     @include abstracts.adjust-for(abstracts.$desktop) {
         width: 57.6%;
         max-width: 46.063rem;     
+    }   
+}
+
+.left-upward-mobile {
+    
+    width: 93.4%;
+    height: 45.65%;
+    position: absolute;
+    top: 43.73%;
+    right: 0;
+    transform: rotatex(180deg);
+    
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    @include abstracts.adjust-for(abstracts.$tablets) {
+        display: none;     
     }   
 }
 
@@ -42,6 +78,22 @@
     }   
 }
 
+.right-arrow-mobile {
+    position: absolute;
+    width: 77.86%;
+    height: 9.438rem;
+    top: 0;
+    left: 0;
+
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    @include abstracts.adjust-for(abstracts.$tablets){
+        display: none;
+    }
+}
 
 .right-arrow {
     display: none;
@@ -54,6 +106,23 @@
         top: 0;
         left: 0;
         z-index: 999;
+    }
+}
+
+.left-arrow-mobile {
+    position: absolute;
+    width: 64.8%;
+    top: 0;
+    right: 0;
+    transform: rotateY(180deg);
+
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    @include abstracts.adjust-for(abstracts.$tablets){
+        display: none;
     }
 }
 
