@@ -69,14 +69,14 @@
 
             img {
 
-                width: 82.9%;
+                max-width: 82.9%;
                 height: 100%;
                 display: block;
                 border-radius: 50%;
                 margin: auto;
 
                 @include abstracts.adjust-for(abstracts.$tablets){
-                    width: 27.8125rem;
+                    max-width: 27.8125rem;
                     height: 27.8125rem;
                }
             }

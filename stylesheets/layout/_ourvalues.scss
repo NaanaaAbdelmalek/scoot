@@ -1,0 +1,109 @@
+@use '../abstracts';
+
+.ourvalues-section {
+
+    max-width: 19.4375rem;
+    margin: auto;
+
+    text-align: center;
+
+    @include abstracts.adjust-for(abstracts.$tablets){
+        max-width: 28.5625rem;
+    }
+
+    @include abstracts.adjust-for(abstracts.$desktop){
+        max-width: 69.375rem;
+        margin-left: 11.45%;
+        margin-right: 11.45%;
+        
+    }
+
+    h2 {
+        margin-bottom: 4rem;
+
+        @include abstracts.adjust-for(abstracts.$tablets){
+            margin-bottom: 3.125rem;
+        }
+
+        @include abstracts.adjust-for(abstracts.$desktop){
+            margin-bottom: 3rem;
+        }
+
+    }
+
+    .values-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        // @include abstracts.adjust-for(abstracts.$tablets){
+        //     max-width: 28.5625rem;
+        // }
+
+        @include abstracts.adjust-for(abstracts.$desktop){
+            flex-direction: row;
+        }
+
+        .value {
+
+            position: relative;
+    
+            @include abstracts.adjust-for(abstracts.$desktop){
+                max-width: 31.53%;
+                flex-direction: row;
+            }
+
+            &:not(:last-child){
+                margin-bottom: 3.5rem;
+            }
+            
+            .value-image {
+                // max-width: 77.17%;
+                // margin: auto;
+                
+                // border-radius: 50%;
+
+                img {
+                    max-width: 77.17%;
+                    display: block;
+                    border-radius: 50%;
+                    margin: auto;
+                }
+
+                // &::after {
+                //     content: attr(data-heading);
+                //     position: absolute;
+                //     width: 6rem;
+                //     height: 6rem;
+                //     background-color: abstracts.$yellow;
+                //     border-radius: 50%;
+                //     line-height: 6.25rem;
+                //     text-align: center;
+                // }
+
+            }
+
+            
+            
+
+            .value-number {
+                position: absolute;
+                top: 42.82%;
+                right: 34.40%;
+                left: 34.72%;
+                width: 6rem;
+                height: 6rem;
+                background-color: abstracts.$yellow;
+                border-radius: 50%;
+                line-height: 6.25rem;
+                text-align: center;
+            }
+
+            h4 {
+                margin-top: 1rem;
+                margin-bottom: 1.6875rem;
+            }
+
+        }
+    }
+}
