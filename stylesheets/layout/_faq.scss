@@ -1,9 +1,19 @@
 @use '../abstracts';
 
 .faq {
+    
+    // need to adjust the &:accordion margin bottom, add the hover and do a final check before pushing
+    margin: 9.0625rem 8.53% 7.5rem 8.53%;
 
-    margin-left: 8.53%;
-    margin-right: 8.53%;
+    @include abstracts.adjust-for(abstracts.$tablets){
+        margin-top: 7.5rem;
+        margin-left: 5.07%;
+        margin-right: 5.2%;
+    }
+
+    @include abstracts.adjust-for(abstracts.$desktop){
+        margin: 7.5rem 11.45% 10rem 11.45%;
+    }
 
     h2{
         text-align: center;
@@ -12,34 +22,84 @@
     .quetions-wrapper{
         display: flex;
         flex-direction: column;
-
         margin-top: 3rem;
+
+        @include abstracts.adjust-for(abstracts.$tablets){
+            margin-top: 4rem;
+        }
+
+        @include abstracts.adjust-for(abstracts.$desktop){
+            flex-direction: row;
+            justify-content: space-between;
+        }
 
         h3{
             text-align: center;
+
+            @include abstracts.adjust-for(abstracts.$desktop){
+                text-align: left;
+                flex: 1;
+                max-width: 31.53%;
+            }
         }
 
         .accordion-group {
 
             margin-top: 2rem;
 
+            @include abstracts.adjust-for(abstracts.$desktop){
+                flex: 1;
+                max-width: 65.76%;
+                margin-top: 0;
+            }
+
             .accordion {
 
                 background-color: abstracts.$snow;
-                padding: 2rem 2rem 2rem 1.75rem;
 
                 &:not(:last-child){
                     margin-bottom: 1rem;
                 }
+
+                @include abstracts.adjust-for(abstracts.$tablets){
+                    &:not(:last-child){
+                        margin-bottom: 1.5rem;
+                    }
+                }                
                 
                 .accordion-header{
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    margin-bottom: 1.5rem;
+                    width: 100%;
+                    padding: 2rem 1.75rem 2rem 2rem;
+                    text-align: left;
+                    border: none;
+                    background-color: transparent;
+
+                    &[aria-expanded="false"] {
+                        + .accordion-panel {
+                            display: none;
+                        }
+                        &:hover{
+                            background-color: abstracts.$light-yellow;
+                        }
+                    }
+
+                    &[aria-expanded="true"] {
+                        + .accordion-panel {
+                            display: block;
+                        }
+                        .accordion-chevron {
+                            transform: rotateX(180deg);
+                        }
+                    }
+
+                    
 
                     h4{
                         flex: 1;
+                        color: abstracts.$dark-navy;
                     }
 
                     .accordion-chevron {
@@ -47,11 +107,30 @@
                         text-align: right;
                     }
 
+
+                    @include abstracts.adjust-for(abstracts.$tablets){
+                        padding: 2rem 2rem 2rem 2.5rem;
+                    }
+    
+                    @include abstracts.adjust-for(abstracts.$desktop){
+                        padding: 2rem 2.5rem 2rem 2.5rem;
+                    }
+
                 }
+
                 .accordion-panel{
+                    padding: 0rem 1.75rem 2rem 2rem;
 
                     .panel {
                        color: abstracts.$dark-navy; 
+                    }
+
+                    @include abstracts.adjust-for(abstracts.$tablets){
+                        padding: 0rem 2rem 2rem 2.5rem;
+                    }
+    
+                    @include abstracts.adjust-for(abstracts.$desktop){
+                        padding: 0rem 2.5rem 2rem 2.5rem;
                     }
                     
 
