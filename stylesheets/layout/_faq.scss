@@ -2,7 +2,6 @@
 
 .faq {
     
-    // need to adjust the &:accordion margin bottom, add the hover and do a final check before pushing
     margin: 9.0625rem 8.53% 7.5rem 8.53%;
 
     @include abstracts.adjust-for(abstracts.$tablets){
