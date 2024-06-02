@@ -1,0 +1,38 @@
+@use '../abstracts';
+
+.job-post {
+    display: flex;
+    flex-direction: column;
+    margin: 9.0625rem 8.53% 7.5rem 8.53%;
+   
+    
+
+    .job-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: abstracts.$snow;
+        padding-top: 2.25rem;
+        padding-bottom: 2rem;
+        
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+
+        .job-info {
+            margin-bottom: 1rem;
+            text-align: center;
+            
+            h4, p{
+                color: abstracts.$dark-navy;
+            }
+        }
+
+        .apply-button{
+            width: 15.4375rem;
+        }
+        
+        
+
+    }
+}
