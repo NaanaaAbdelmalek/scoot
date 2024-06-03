@@ -16,8 +16,7 @@
     }
 
     @include abstracts.adjust-for(abstracts.$desktop){
-        background: url(../assets/images/about-hero-desktop.jpg);
-        
+        background: url(../assets/images/about-hero-desktop.jpg);  
     }
 
     h1{
@@ -40,5 +39,18 @@
             width: 12.6875rem;
             top: 4.3125rem;
         }
+    }
+}
+
+
+.careers-location {
+    background: url(../assets/images/careers-location-hero-mobile.jpg);
+
+    @include abstracts.adjust-for(abstracts.$tablets){
+        background: url(../assets/images/careers-locations-hero-tablet.jpg);
+    }
+
+    @include abstracts.adjust-for(abstracts.$desktop){
+        background: url(../assets/images/careers-locations-hero-desktop.jpg);  
     }
 }

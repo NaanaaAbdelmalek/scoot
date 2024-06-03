@@ -4,6 +4,14 @@
     display: flex;
     flex-direction: column;
     margin: 9.0625rem 8.53% 7.5rem 8.53%;
+
+    @include abstracts.adjust-for(abstracts.$tablets) {
+        margin: 7.5rem 5.208% 7.5rem 5.078%;
+    }
+
+    @include abstracts.adjust-for(abstracts.$desktop) {
+        margin: 7.5rem 11.458% 10rem 11.458%;
+    }
    
     
 
@@ -14,14 +22,32 @@
         background-color: abstracts.$snow;
         padding-top: 2.25rem;
         padding-bottom: 2rem;
+
+        @include abstracts.adjust-for(abstracts.$tablets) {
+            flex-direction: row;
+            padding: 2.125rem 3rem 2.0625rem 3rem;
+        }
+
+        @include abstracts.adjust-for(abstracts.$desktop) {
+            padding: 2rem 4rem 2.1875rem 2.5rem;
+        }
         
         &:not(:last-child) {
             margin-bottom: 1rem;
+
+            @include abstracts.adjust-for(abstracts.$desktop) {
+                margin-bottom: 1.5rem;
+            }
         }
 
         .job-info {
             margin-bottom: 1rem;
             text-align: center;
+
+            @include abstracts.adjust-for(abstracts.$tablets) {
+                text-align: left;
+                flex: 1;
+            }
             
             h4, p{
                 color: abstracts.$dark-navy;
@@ -30,6 +56,10 @@
 
         .apply-button{
             width: 15.4375rem;
+
+            @include abstracts.adjust-for(abstracts.$tablets) {
+                width: 11.25rem;
+            }
         }
         
         
