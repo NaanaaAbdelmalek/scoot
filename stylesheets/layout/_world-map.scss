@@ -1,0 +1,44 @@
+@use '../abstracts';
+
+
+.world-map {
+    margin: 4.5rem 8.53% 2.5rem 8.53%;
+
+    @include abstracts.adjust-for(abstracts.$tablets){
+        margin: 9rem 5.2% 4rem 5.07%;
+    }
+
+    @include abstracts.adjust-for(abstracts.$desktop){
+        margin: 7.5rem 11.52% 7.5rem 11.38%;     
+    }
+    
+
+    img {
+        width: 100%;
+    }
+
+    #world-map-mobile {
+        @include abstracts.adjust-for(abstracts.$tablets){
+            display: none;
+        }
+    }
+
+    #world-map-tablet {
+        display: none;
+        @include abstracts.adjust-for(abstracts.$tablets){
+            display: block;
+        }
+        @include abstracts.adjust-for(abstracts.$desktop){
+            display: none;
+        }
+    }
+
+    #world-map-desktop {
+        display: none;
+        
+        @include abstracts.adjust-for(abstracts.$desktop){
+            display: block;
+        }
+    }
+}
+
