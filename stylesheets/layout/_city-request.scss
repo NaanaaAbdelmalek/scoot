@@ -1,0 +1,41 @@
+@use '../abstracts';
+
+.city-request {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 8.53% 4.5rem 8.53%;
+    text-align: center;
+
+    @include abstracts.adjust-for(abstracts.$tablets){
+        margin: 0rem 12.76% 7.5rem 12.63%;
+    }
+
+    @include abstracts.adjust-for(abstracts.$desktop){
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0rem 11.45% 7.5rem 11.38%; 
+        text-align: left;   
+    }
+
+    h2 {
+        margin-bottom: 2rem;
+        @include abstracts.adjust-for(abstracts.$desktop){
+            width: 31.62%;  
+        }
+    }
+
+    p {
+        margin-bottom: 2rem;
+        @include abstracts.adjust-for(abstracts.$desktop){
+            width: 40.09%;  
+        }
+    }
+
+    .button {
+        margin: auto;
+        @include abstracts.adjust-for(abstracts.$desktop){
+            margin: 0; 
+        }
+    }
+}

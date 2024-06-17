@@ -1,0 +1,39 @@
+@use '../abstracts';
+
+.cities {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 8.53% 4.5rem 8.53%;
+
+    @include abstracts.adjust-for(abstracts.$tablets){
+       display: none;
+    }
+
+    @include abstracts.adjust-for(abstracts.$desktop){
+       display: none;     
+    }
+
+    .city {
+
+        text-align: center;
+        height: 4.5rem;
+        background-color:rgba(252, 183, 43, 0.15);
+        padding: 1.375rem 0rem 1.375rem 0rem;
+
+        &:not(:last-child){
+            margin-bottom:  1rem;;
+        }
+
+        p {
+            color: abstracts.$dark-navy;
+            font-family: "Space Mono";
+            font-size: 1.5rem;
+            // font-style: normal;
+            font-weight: bold;
+            line-height: 1.75rem;
+            letter-spacing: -0.066875rem;
+        }
+
+    }
+   
+}
