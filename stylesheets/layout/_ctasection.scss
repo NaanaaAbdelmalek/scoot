@@ -36,6 +36,8 @@
 
         @include abstracts.adjust-for(abstracts.$tablets) {
             max-width: 28.5625rem;
+            position: relative;
+            z-index: 999;
         }
 
         @include abstracts.adjust-for(abstracts.$desktop) {
