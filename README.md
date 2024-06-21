@@ -28,13 +28,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/screenshot.png)
+![](./assets/screenshot.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/NaanaaAbdelmalek/scoot)
-- Live Site URL: [Add live site URL here](https://naanaaabdelmalek.github.io/scoot/)
+- Solution URL: [https://github.com/NaanaaAbdelmalek/scoot]
+- Live Site URL: [https://naanaaabdelmalek.github.io/scoot/]
 
 ## My process
 
